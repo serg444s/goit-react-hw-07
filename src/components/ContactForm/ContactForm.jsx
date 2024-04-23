@@ -10,6 +10,7 @@ const ContactForm = () => {
     const form = e.target;
     const name = form.elements.name.value.trim();
     const number = form.elements.number.value;
+    console.log(name, number);
     dispatch(addContact(name, number));
     form.reset();
   };
