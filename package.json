@@ -21,7 +21,9 @@
     "react-loader-spinner": "^6.1.6",
     "react-redux": "^9.1.1",
     "redux": "^5.0.1",
-    "redux-persist": "^6.0.0"
+    "redux-persist": "^6.0.0",
+    "scroll-to-top-react": "^0.0.7",
+    "styled-components": "^6.1.8"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

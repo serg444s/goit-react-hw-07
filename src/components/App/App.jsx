@@ -10,6 +10,7 @@ import "./App.css";
 import { selectError, selectIsLoading } from "../../redux/selectors";
 import Loader from "../Loader/Loader";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
+import BtnGoToTop from "../BtnGoToTop/BtnGoToTop";
 
 function App() {
   const dispatch = useDispatch();
@@ -33,6 +34,7 @@ function App() {
             <ContactList />
             {isLoading && <Loader />}
             {error && <ErrorMessage />}
+            <BtnGoToTop />
           </div>
           <div className="bottom"></div>
         </div>
