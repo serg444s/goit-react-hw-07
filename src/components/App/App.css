@@ -1,5 +1,4 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -42,7 +41,7 @@
 }
 
 body {
-  background: linear-gradient(to bottom, black, darkslategray);
+  background: linear-gradient(to bottom, #0074d9, #ffdc00);
 }
 
 .container {
@@ -76,4 +75,5 @@ body {
   background-color: rgba(20, 16, 16, 0.416);
   border-radius: 32px;
   margin: 0 auto;
+  margin-top: 4px;
 }

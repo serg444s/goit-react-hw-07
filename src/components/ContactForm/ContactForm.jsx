@@ -1,7 +1,6 @@
 import { useDispatch } from "react-redux";
 import css from "./ContactForm.module.css";
-import { addContact } from "../../redux/contactsSlice";
-import toast from "react-hot-toast";
+import { addContact } from "../../redux/contactsOps";
 
 const ContactForm = () => {
   const dispatch = useDispatch();
@@ -13,7 +12,6 @@ const ContactForm = () => {
     const number = form.elements.number.value;
     dispatch(addContact(name, number));
     form.reset();
-    toast.success("Successfully added");
   };
 
   return (
