@@ -8,6 +8,8 @@ import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import "./App.css";
 import { selectError, selectIsLoading } from "../../redux/selectors";
+import Loader from "../Loader/Loader";
+import ErrorMessage from "../ErrorMessage/ErrorMessage";
 
 function App() {
   const dispatch = useDispatch();
@@ -22,12 +24,14 @@ function App() {
     <>
       <Toaster position="top-right" reverseOrder={false} />
       <h1 className="title">My phonebook</h1>
-      {isLoading && !error && <b>Please wait. Request in progress...</b>}
+
       <div className="container">
         <div className="phone">
           <div>
             <ContactForm />
             <SearchBox />
+            {isLoading && <Loader />}
+            {error && <ErrorMessage />}
             <ContactList />
           </div>
           <div className="bottom"></div>
