@@ -30,9 +30,9 @@ function App() {
           <div>
             <ContactForm />
             <SearchBox />
+            <ContactList />
             {isLoading && <Loader />}
             {error && <ErrorMessage />}
-            <ContactList />
           </div>
           <div className="bottom"></div>
         </div>
